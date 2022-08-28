@@ -43,46 +43,46 @@
   $$
   M_{persp->ortho}=
   \left[\begin{matrix}
-  n & 0 & 0 & 0\\
-  0 & n & 0 & 0\\
-  0 & 0 & n + f & -nf\\
+  n & 0 & 0 & 0\\\\
+  0 & n & 0 & 0\\\\
+  0 & 0 & n + f & -nf\\\\
   0 & 0 & 1 & 0
   \end{matrix}\right]
-  \\
+  \\\\
   M_{ortho}=
   \left[\begin{matrix}
-  \frac{2}{r-l} & 0 & 0 & 0\\
-  0 & \frac{2}{t-b} & 0 & 0\\
-  0 & 0 & \frac{2}{n-f} & 0\\
+  \frac{2}{r-l} & 0 & 0 & 0\\\\
+  0 & \frac{2}{t-b} & 0 & 0\\\\
+  0 & 0 & \frac{2}{n-f} & 0\\\\
   0 & 0 & 0 & 1
   \end{matrix}\right]
   *
   \left[\begin{matrix}
-  1 & 0 & 0 & -\frac{r+l}{2}\\
-  0 & 1 & 0 & -\frac{t+b}{2}\\
-  0 & 0 & 1 & -\frac{n+f}{2}\\
+  1 & 0 & 0 & -\frac{r+l}{2}\\\\
+  0 & 1 & 0 & -\frac{t+b}{2}\\\\
+  0 & 0 & 1 & -\frac{n+f}{2}\\\\
   0 & 0 & 0 & 1
   \end{matrix}\right]
   =
   \left[\begin{matrix}
-  \frac{2}{r-l} & 0 & 0 & -\frac{r+l}{r-l}\\
-  0 & \frac{2}{t-b} & 0 & -\frac{t+b}{t-b}\\
-  0 & 0 & \frac{2}{n-f} & -\frac{n+f}{n-f}\\
+  \frac{2}{r-l} & 0 & 0 & -\frac{r+l}{r-l}\\\\
+  0 & \frac{2}{t-b} & 0 & -\frac{t+b}{t-b}\\\\
+  0 & 0 & \frac{2}{n-f} & -\frac{n+f}{n-f}\\\\
   0 & 0 & 0 & 1
   \end{matrix}\right]
-  \\
+  \\\\
   M_{persp}=M_{ortho}*M_{persp->ortho}=
   \left[\begin{matrix}
-  \frac{2n}{r-l} & 0 & -\frac{r+l}{r-l} & 0\\
-  0 & \frac{2n}{t-b} & -\frac{t+b}{t-b} & 0\\
-  0 & 0 & \frac{n+f}{n-f} & -\frac{2nf}{n-f}\\
+  \frac{2n}{r-l} & 0 & -\frac{r+l}{r-l} & 0\\\\
+  0 & \frac{2n}{t-b} & -\frac{t+b}{t-b} & 0\\\\
+  0 & 0 & \frac{n+f}{n-f} & -\frac{2nf}{n-f}\\\\
   0 & 0 & 1 & 0
   \end{matrix}\right]
   =
   \left[\begin{matrix}
-  \frac{n}{r} & 0 & 0 & 0\\
-  0 & \frac{n}{t} & 0 & 0\\
-  0 & 0 & \frac{n+f}{n-f} & -\frac{2nf}{n-f}\\
+  \frac{n}{r} & 0 & 0 & 0\\\\
+  0 & \frac{n}{t} & 0 & 0\\\\
+  0 & 0 & \frac{n+f}{n-f} & -\frac{2nf}{n-f}\\\\
   0 & 0 & 1 & 0
   \end{matrix}\right]
   $$
@@ -96,9 +96,9 @@
   $$
   M_{viewport}=
   \left[\begin{matrix}
-  \frac{width}{2} & 0 & 0 & x+\frac{width}{2}\\
-  0 & \frac{height}{2} & 0 & y+\frac{height}{2}\\
-  0 & 0 & 1 & 0\\
+  \frac{width}{2} & 0 & 0 & x+\frac{width}{2}\\\\
+  0 & \frac{height}{2} & 0 & y+\frac{height}{2}\\\\
+  0 & 0 & 1 & 0\\\\
   0 & 0 & 0 & 1
   \end{matrix}\right]
   $$
