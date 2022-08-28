@@ -36,7 +36,7 @@
 
 * 光照模型：Blinn-Phong
 
-  ![Blinn-Phont.png](https://raw.githubusercontent.com/mboath/MyTinyRenderer/main/images/Blinn-Phong.png)
+  ![Blinn-Phong.png](https://raw.githubusercontent.com/mboath/MyTinyRenderer/main/images/readme_pic/Blinn-Phong.png)
 
 
 ![para5.png](https://raw.githubusercontent.com/mboath/MyTinyRenderer/main/images/readme_pic/para5.png)
