@@ -21,20 +21,20 @@
 * View Transformation 世界空间 -> 观察空间：摄像机位置（$\vec{e}$）在原点，朝向（$\hat{g}$）指向-z，上方向（$\hat{t}$）指向y
   $$
   M_{view} = R_{view}T_{view}
-  \\
+  \\\
   T_{view}=
   \left[\begin{matrix}
-  1 & 0 & 0 & -x_e\\
-  0 & 1 & 0 & -y_e\\
-  0 & 0 & 1 & -z_e\\
+  1 & 0 & 0 & -x_e\\\
+  0 & 1 & 0 & -y_e\\\
+  0 & 0 & 1 & -z_e\\\
   0 & 0 & 0 & 1
   \end{matrix}\right]
-  \\
+  \\\
   R_{view}=
   \left[\begin{matrix}
-  x_{\hat{g}×\hat{t}} & y_{\hat{g}×\hat{t}} & z_{\hat{g}×\hat{t}} & 0\\
-  x_t & y_t & z_t & 0\\
-  x_{-g} & y_{-g} & z_{-g} & 0\\
+  x_{\hat{g}×\hat{t}} & y_{\hat{g}×\hat{t}} & z_{\hat{g}×\hat{t}} & 0\\\
+  x_t & y_t & z_t & 0\\\
+  x_{-g} & y_{-g} & z_{-g} & 0\\\
   0 & 0 & 0 & 1
   \end{matrix}\right]
   $$
