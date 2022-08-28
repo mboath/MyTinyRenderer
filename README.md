@@ -40,6 +40,7 @@
   $$
 
 * Projection Transformation 观察空间 -> 裁剪空间：近平面n，远平面f，$b=-t$，$l=-r$
+  \\\\
   $$
   M_{persp->ortho}=
   \left[\begin{matrix}
