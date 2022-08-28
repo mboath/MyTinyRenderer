@@ -71,7 +71,7 @@
   0 & 0 & 0 & 1
   \end{matrix}\right]
   \\\\
-  M_{persp}=M_{ortho}*M_{persp->ortho}=
+  M_{persp}=M_{ortho}·M_{persp->ortho}=
   \left[\begin{matrix}
   \frac{2n}{r-l} & 0 & -\frac{r+l}{r-l} & 0\\\\
   0 & \frac{2n}{t-b} & -\frac{t+b}{t-b} & 0\\\\
