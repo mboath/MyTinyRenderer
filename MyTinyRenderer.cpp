@@ -10,12 +10,12 @@
 #include "myGL.h"
 using namespace std;
 
-const int width = 800;
-const int height = 800;
+const int width = 2000;
+const int height = 2000;
 const int depth = 255;
 
 Camera* cam = new Camera(Vec3f(1, 0, 2), Vec3f(-1, 0, -2), Vec3f(0, 1, 0), -0.1, -10);
-Light* light = new Light(Vec3f(3, 3, 3), Vec3f(1.f, 1.f, 1.f) * 0.3, Vec3f(1.f, 1.f, 1.f) * 0.7, Vec3f(1.f, 1.f, 1.f) * 1.0);
+Light* light = new Light(Vec3f(3, 3, 3), Vec3f(1.f, 1.f, 1.f) * 0.3, Vec3f(1.f, 1.f, 1.f) * 1.0, Vec3f(1.f, 1.f, 1.f) * 1.0);
 Material* material = new Material(TGAColor(64, 64, 64), 20.f);
 
 Model* model = NULL;
@@ -163,7 +163,7 @@ int main(int argc, char** argv)
         }
     }
     
-    //second pass: rendering the framebuffer
+    //second pass: rendering the frame buffer
     set_view(cam);
     set_projection(cam);
     set_viewport(0, 0, width, height);
