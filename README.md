@@ -39,7 +39,7 @@
   \end{matrix}\right]
   $$
 
-* Projection Transformation 观察空间 -> 裁剪空间：近平面n，远平面f，$b=-t$，$l=-r$。
+* Projection Transformation 观察空间 -> 裁剪空间：近平面n，远平面f，$b=-t$，$l=-r$
   $$
   M_{persp->ortho}=
   \left[\begin{matrix}
@@ -56,7 +56,7 @@
   0 & 0 & \frac{2}{n-f} & 0\\\\
   0 & 0 & 0 & 1
   \end{matrix}\right]
-  *
+  ·
   \left[\begin{matrix}
   1 & 0 & 0 & -\frac{r+l}{2}\\\\
   0 & 1 & 0 & -\frac{t+b}{2}\\\\
